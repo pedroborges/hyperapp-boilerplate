@@ -4,15 +4,19 @@
   "author": "Pedro Borges <oi@pedroborg.es>",
   "license": "MIT",
   "scripts": {
-    "start": "parcel src/index.html -d temp",
-    "build": "parcel build src/index.html -d public --public-url ./"
+    "purgecss": "./node_modules/.bin/purgecss --css public/*.css --content public/index.html public/**/*.js -o public",
+    "start": "parcel src/index.html -d temp --no-cache",
+    "build": "parcel build src/index.html -d public --public-url ./ && yarn purgecss"
   },
   "devDependencies": {
     "babel-plugin-transform-h-jsx": "^1.0.0",
     "babel-preset-env": "^1.6.1",
     "parcel-bundler": "^1.6.1",
+    "purgecss": "^0.20.0"
   },
   "dependencies": {
+    "autoprefixer": "^8.0.0",
     "hyperapp": "^1.1.2",
+    "tailwindcss": "^0.4.1"
   }
 }
