@@ -3,9 +3,16 @@
   "version": "1.0.0",
   "author": "Pedro Borges <oi@pedroborg.es>",
   "license": "MIT",
+  "scripts": {
+    "start": "parcel src/index.html -d temp",
+    "build": "parcel build src/index.html -d public --public-url ./"
+  },
   "devDependencies": {
     "babel-plugin-transform-h-jsx": "^1.0.0",
     "babel-preset-env": "^1.6.1",
     "parcel-bundler": "^1.6.1",
+  },
+  "dependencies": {
+    "hyperapp": "^1.1.2",
   }
 }
