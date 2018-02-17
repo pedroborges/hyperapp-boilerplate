@@ -5,6 +5,18 @@
  * Custom Styles
  */
 
+html {
+  @apply .h-full;
+  font-size: 16px;
+}
+
+body {
+  @apply .h-full .text-grey-light .bg-grey-darkest;
+}
+
+svg {
+  fill: currentColor;
+}
 
 @tailwind utilities;
 
