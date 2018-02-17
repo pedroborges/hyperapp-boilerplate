@@ -2,5 +2,10 @@
   "name": "hyperapp-boilerplate",
   "version": "1.0.0",
   "author": "Pedro Borges <oi@pedroborg.es>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-plugin-transform-h-jsx": "^1.0.0",
+    "babel-preset-env": "^1.6.1",
+    "parcel-bundler": "^1.6.1",
+  }
 }
