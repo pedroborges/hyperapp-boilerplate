@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "autoprefixer": "^8.0.0",
+    "classcat": "^3.0.1",
     "hyperapp": "^1.1.2",
     "tailwindcss": "^0.4.1"
   }
